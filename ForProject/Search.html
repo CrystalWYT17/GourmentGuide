@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			var storename=["SHWE KAUNG","SHWE LAR","SHWE WANG","JOJO HOTPOT","THAI POT"];
+			var key=prompt("Enter your restaurant");
+			var toupper=key.toUpperCase();
+			var numberofcharacter=key.length;
+			//document.write(numberofcharacter);
+			for(var i=0;i<storename.length;i++){
+				var same=storename[i].substr(0,numberofcharacter);
+				if(same==toupper){
+				document.write(storename[i]+"<BR>");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

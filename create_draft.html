@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Create Account | The Gourmet Guide</title>
+		<link rel="icon" href="Images/icon.png" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="main_styles2.css">
+		<style>
+			#log {
+				margin: auto;
+				padding : 20px 50px;
+				padding-bottom: 50px;
+				width : 400px;
+				background-color : rgba(255,255,255,0.5);
+				transition: 0.25s ease-in-out;
+			}
+			#log:hover {
+				background-color : rgba(255,255,255,0.8);
+			}
+			#log:focus {
+				background-color : rgba(255,255,255,0.8);
+			}
+			h1 {
+				text-align:center;
+			}
+			#t1,#t2 {
+				border: 0px #000000 solid;
+				border-bottom: 2px #222222 solid;
+				transition: 0.25s ease-in-out;
+				background-color: rgba(255,255,255, 0);
+			}
+			#t1:hover ,#t2:hover, #t1:focus ,#t2:focus {
+				background-color: rgba(255,255,255, 0.5);
+				border-bottom: 2px #5945EE solid;
+			}
+			#b1, #b2 {
+				font-weight:bold;
+				border: 0px #000000 solid;
+				padding: 4px;
+				margin-top:25px;
+				margin-bottom:10px;
+				width:100px;
+				background-color: rgba(255,255,255, 0.6);
+				transition: 0.25s ease-in-out;
+			}
+			#b1:hover ,#b2:hover, #b1:focus ,#b2:focus {
+				background-color: rgba(0,0,0, 0.3);
+			}
+			
+			#a1 {
+				color:#5945EE;
+				text-decoration:none;
+			}
+			#a1:hover {
+				text-decoration:underline;
+			}
+			#xalert {
+				color:red;
+			}
+		</style>
+		<script>
+			function clrscr()
+			{
+				document.myForm.txtname.value = "";
+				document.myForm.txtpsd.value = "";
+				document.myForm.txtpsdre.value = "";
+				document.myForm.txtmail.value = "";
+			}
+			function pswd()
+			{
+				if (document.myForm.txtpsd.value != document.myForm.txtpsdre.value)
+				{
+					document.myForm.txtpsdre.value = "";
+					document.getElementById('xalert').innerHTML="Wrong Password";
+				}
+				if (document.myForm.txtpsd.value == document.myForm.txtpsdre.value)
+				{
+					document.getElementById('xalert').innerHTML="";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="heading" title="Take me to a Random Restaurant"><a href="home_draft2.html">The Gourmet Corner</a></div>
+			<form id="log" name="myForm" onsubmit="">
+				<h1><div class="fa fa-archive"></div> Create an account</h1>
+				<table style="margin: auto">
+					<tr>
+						<td>Username :</td>
+						<td><input type="text" name="txtname" id="t1"/></td>
+					</tr>
+					<tr>
+						<td>Password :</td>
+						<td><input type="password" name="txtpsd" id="t2"/></td>
+					</tr>
+					<tr>
+						<td>Confirm<br />Password :</td>
+						<td><input type="password" name="txtpsdre" id="t2" onblur="pswd();"/></td>
+						<td id="xalert" style="width:150px;"></td>
+					</tr>
+					<tr>
+						<td>Gmail :</td>
+						<td><input type="password" name="txtmail" id="t2"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" name="btnclr" value="Clear" onclick="clrscr();" id="b1"/></td>
+						<td><input type="submit" name="btnsub" value="Submit" onclick="" id="b2"/></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="login_draft.html" id="a1">Already have an account?</a></td>
+					</tr>
+				</table>
+			</form>
+		<footer>
+			<p>
+				Contact Us
+				<div class="fa fa-phone-square"></div> <a href="tel:+959250063182" id="me">+959250063182</a> .&nbsp;
+				<div class="fa fa-phone-square"></div> <a href="tel:+959784342756" id="me">+959784342756</a> .&nbsp;
+				<div class="fa fa-cloud"></div> <a href="mailto:thuta.another2@gmail.com" id="me">thuta.another2@gmail.com</a><br />
+				<div class="fa fa-facebook-official"></div> <a href="https://www.facebook.com" id="me">Facebook</a> .&nbsp;
+				<div class="fa fa-twitter"></div> <a href="https://www.twitter.com" id="me">Twitter</a>
+			</p>
+			Copyright &copy; 2017 Second Year Section (A) All Rights Reserved
+		</footer>
+		
+	</body>
+</html>

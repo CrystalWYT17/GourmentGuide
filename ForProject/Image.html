@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			function showimage(src,width,height,alt){
+				var img=document.createElement("img");
+				img.src=src;
+				img.width=width;
+				img.height=height;
+				img.alt=alt;
+				document.body.appendChhild(img);
+			}
+			//showimage("8a351f0b7392f89a1a7e148dd27f3732.jpg",276,110,"Image");
+			/*function image(a,b,c){
+				this.link=a;
+				this.alt=b;
+				this.thumb=c;
+			}
+			function show_image(){
+				image1=new image("8a351f0b7392f89a1a7e148dd27f3732.jpg","image","thumb/img3");
+				document.write("<img src="+image1+">");
+			}
+			
+			//showimage();*/
+		</script>
+		<p><input type="button" value="vdk" onclick="showimage('8a351f0b7392f89a1a7e148dd27f3732.jpg',276,110,"Image");" /></p>
+	</body>
+	
+</html>

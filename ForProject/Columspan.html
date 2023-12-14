@@ -1,0 +1,91 @@
+    <html>
+	<head>
+		
+	</head>
+	<body >
+		
+		<script>
+			function restaurant(type,name,location,township,price,image){
+				this.type=type;
+				this.name=name;
+				this.location=location;
+				this.price=price;
+				this.image=image;
+				//document.write(name+"\t\t\t"+location+"\t\t\t"+price+"<img src="+image+">"+"<BR>");
+				
+				//document.write("<style>#lll a:hover span { display: block;position: absolute;top: 10px;left: 300px;text-align: center; }</style>")
+	//document.write("<div id="lll"><ul><li><a href="+image+"><img src="+image+"><img src="+image+" width=500 height=500><br></a></li></ul></div>");
+				//document.body.style.backgroundColor="red";
+				
+				//display(type,name,location,price,image);
+			//	document.write("<a href="+image+"><img src="+image+">");
+				
+				
+			}
+			
+			function display(rest){
+				for(var i=0;i<rest.length;i++){
+				document.write("<table width='400' border='1' cellpadding='5' >");
+				document.write("<tr>");
+				document.write("<td rowspan=3>"+"<img src="+rest[i].image+">"+"</td><td width='200' >" );
+				switch(rest[i].type){
+					case "Hotpot":document.write(rest[i].name.fontcolor("Red"));break;
+					case "India":document.write(rest[i].name.fontcolor("Blue"));break;  
+					case "Korea":document.write(rest[i].name.fontcolor("Pink"));break;
+					case "FastFood":document.write(rest[i].name.fontcolor("Orange"));break;
+					case "Thai":document.write(rest[i].name.fontcolor("Green"));break;
+				}
+				
+				
+				document.write("</td></tr>");
+				document.write("<tr><td>Price: "+rest[i].price+"</td></tr>"+"<tr><td bgcolor="+"pink"+">"+rest[i].location+"</td></tr>");
+				}
+			}
+			
+			var re=[];
+			re[0]=new restaurant("Hotpot","Thai Pot","Location: No250, Insein Road, Hlaing Township, Yangon","Hlaing","High","ForProject\\Thaipot.jpg");
+			re[1]=new restaurant("Hotpot","Hot Pot King","Location: 26/27, thitsar Road, South Okkalapa Township, Yangon","South Okkalapa","Medium","ForProject\\HotpotKing.jpg");
+			re[2]=new restaurant("Hotpot","O-Shabu Hot Pot","Location: 8A, Rarami road, Mayangone Township, Yangon","Mayangone","Price: Medium","ForProject\\O-Shabu.jpg");
+			re[3]=new restaurant("Hotpot","Shwe Apple","Location: No.138, Sanchaung Street, Sanchaung Township, Yangon","Sanchaung","Medium","ForProject\\ShweApple.jpg");
+			re[4]=new restaurant("Hotpot","Gangnam Buffet","Location: Mahar Land Center, GabarAye Pagoda Road, Yankin Township, Yangon","Yankin","Medium","ForProject\\GangnamBuffet.jpg");
+			re[5]=new restaurant("Hotpot","Shwe Lar Hot Pot","Location: Room2, Nar Nat Taw Street, Hledan, Kamayut Township, Yangon","Kamayut","High","ForProject\\ShweLar.jpg");
+			re[6]=new restaurant("Hotpot","Shwe Wang","Location: Underground(B1), No.10, Hledan Center, Kamayut Township, Yangon","Kamayut","Medium","ForProject\\ShweWang.jpg");
+			re[7]=new restaurant("Hotpot","Hot pot Buffet Express","Location: No.438 44th Street and Merchant Road, Yangon","","Medium","ForProject\\BuffetExpress.jpg");
+			re[8]=new restaurant("Hotpot","The Spicy House","Location: L6, Secret Garden, Junction Square, Yangon","Kamayut","High","ForProject\\TheSpicyHouse.jpg");
+			re[9]=new restaurant("Hotpot","Wa Toke Kyee","Location: Myay Ni Gone,Corner of Yadanar Street, Sanchaung Township, Yangon","Sanchaung","Medium","ForProject\\WaTokeKyee.jpg");
+			re[10]=new restaurant("Hotpot","Jo Jo","Location: 23-A, Nawaday Road, Dagon Township,Yangon","Dagon","Medium","ForProject\\JoJo.jpg");
+			re[11]=new restaurant("Hotpot","Gandamar Garden","Location: No.132, Gandamar Street, Mayangone Township, Yangon","Mayangone","Medium","ForProject\\GandamarGarden.jpg");
+			
+			var indi=[];
+			indi[0]=new restaurant("India","The Marina","Location: No 63, Taw Win Road, Dagon Township, Yangon","Dagon","High","ForProject\\TheMarina.jpg");
+			
+			//re[10]=new restaurant("Korea","Korean Taste","Location: Room No.405, Ga Mone Pwint Shopping Mall(Hledan), Insein road, Yangon","Price: Medium","ForProject\\")
+			var fastf=[];
+			fastf[0]=new restaurant("FASTFOOD","Burger Box","Location: Parami Road , Mayangone Township,Yangon","Mayangone","Medium","ForProject\\BurgerBox.jpg");
+			fastf[1]=new restaurant("FASTFOOD","Burger King","Location: T3-L1-07,Ground Floor,Yangon Domestic Terminal3 Yangon International Airport ,Mingalardon Township, Yangon","Mingalardon","Medium","ForProject\\BurgerKing.jpg");
+			fastf[2]=new restaurant("FASTFOOD","KFC","Location: No .375, Bogyoke Aung San road, Pabedan Township, Yangon","Pabedan","Low","ForProject\\KFC.jpg");
+			fastf[3]=new restaurant("FASTFOOD","Lotteria","Location: Junction Square Shopping Mall, Kamayut Township, Yangon","Kamayut","Low","ForProject\\Lotteria.jpg");
+			fastf[4]=new restaurant("FASTFOOD","August","Location: Building(1),Room(12),Insein Road, Kamayut Township, Yangon","Kamayut","Low","ForProject\\August.jpg");
+			
+			var thai=[];
+			thai[0]=new restaurant("THAI","Yum Thai","Location: Hledan Center shopping Mall Level 2, Kamayut Township, Yangon","Kamayut","Medium","ForProject\\YumThai.jpg");
+			thai[1]=new restaurant("THAI","My Siam","Location: No13, south Padoma Stadium Sanchaung Street, Yangon","Sanchaung","Medium","ForProject\\MySiam.jpg");
+			thai[2]=new restaurant("THAI","Green Gallery","Location: Mahabandoola Road,Pabedan Township,Yangon","Pabedan","Medium","ForProject\\Greengallery.jpg");
+			thai[3]=new restaurant("THAI","Pad Thai","Location: Mya Yar Gone Rd, Mingalar Taung Nyunt Township,Yangon","MingalarTaungNyunt","Medium","ForProject\\PadThai.jpg");
+			
+			var korea=[];
+			korea[0]=new restaurant("Korea","Her's","Location: Taw Win Centre , Dagon Township, Yangon","Dagon","High","ForProject\\Her.jpg");
+	       	korea[1]=new restaurant("Korea","Seranghae","Location: -No.81,Hledan Road, Kamayut Township, Yangon","Kamayut","Medium","ForProject\\Seranghae.jpg");
+	       	korea[2]=new restaurant("Korea","Young Na Ra","Location: 8 Miles Traffic Point,Mayangone Township, Yangon","Mayangone","Medium","ForProject\\YoungNaRa.jpg");
+	       	korea[3]=new restaurant("Korea","Yoogane","Location: Ocean 9 Miles ,Yangon","Mayangone","High","ForProject\\Yoogane.jpg");
+	       
+	       //display(indi);
+	      // display(fastf);
+	      display(korea);
+	      // display(re);  
+	       //display(thai);
+		</script>
+		
+		
+	</body>
+</html>

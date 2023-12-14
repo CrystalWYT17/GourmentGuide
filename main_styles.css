@@ -1,0 +1,56 @@
+			body {
+				font-family : "Comic Sans MS";
+				background-image : url("Images/famous-restaurents.jpg");
+				background-repeat : no-repeat;
+				background-attachment: fixed;
+				background-size : cover;
+				text-align : justify;
+			}
+			#header {
+				text-align: center;
+				font-size : 5em;
+				color : white;
+				transition: 0.25s ease-in-out;
+				text-shadow :
+				-1px -1px 0 #000000,
+				1px -1px 0 #000000,
+				-1px 1px 0 #000000,
+				1px 1px 0 #000000;	
+			}	
+			#header:hover {
+				text-shadow :
+				-2px -2px 0 #00C08B,
+				2px -2px 0 #F8C54D,
+				-2px 2px 0 #5945ee,
+				2px 2px 0 #eb2d2d;	
+			}
+			a {
+				color : white;
+				text-decoration: none;
+			}
+			nav {
+				width: 750px;
+				margin : 0px auto;
+				font-size : 2em;
+				color : white;
+				text-shadow :
+				-1px -1px 0 #000000,
+				1px -1px 0 #000000,
+				-1px 1px 0 #000000,
+				1px 1px 0 #000000;
+			}
+			footer {
+				color: #FFFFFF;
+				font-weight: bold;
+				text-shadow :
+				-1px -1px 0 #000000,
+				1px -1px 0 #000000,
+				-1px 1px 0 #000000,
+				1px 1px 0 #000000;
+			}
+			#wrapper {
+				width : 900px;
+				margin : 0px auto;
+				background-color: rgba(255,255,255,0.6);
+				padding : 20px 50px;
+			}

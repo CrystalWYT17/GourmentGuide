@@ -1,0 +1,91 @@
+			body {
+				font-family : Georgia;
+				background-image : url("Images/p5.jpg");
+				background-repeat : no-repeat;
+				background-attachment: fixed;
+				background-size : cover;
+				text-align : justify;
+			}
+			#heading {
+				text-align: center;
+				font-size : 3em;
+				margin-bottom : 50px;
+			}
+			#heading a {
+				color : white;
+				text-decoration : none;
+				font-weight : bold;
+				transition: 0.25s ease-in-out;
+				text-shadow : 4px 0px 0 #777777;
+			}
+			#heading a:hover {
+				text-shadow : 4px 0px 0 #555555;
+			}
+			#wrapper {
+				color : #222222;
+				width : 1000px;
+				background-color : rgba(255,255,255, 0.5);
+				margin : 0px auto;
+				padding : 20px 50px;
+				transition: 0.25s ease-in-out;
+			}
+			#wrapper:hover {
+				background-color : rgba(255,255,255,0.8);
+			}
+			#wrapper:focus {
+				background-color : rgba(255,255,255,0.8);
+			}
+			
+			nav {
+				font-size : 1.8em;
+				margin : 0px auto;
+				padding : 20px 50px;
+			}
+			nav a {
+				background-color : rgba(0,0,0, 0.4);
+				padding : 20px 50px;
+				color : white;
+				text-decoration : none;
+				transition: 0.25s ease-in-out;
+			}
+			nav a:hover, nav a:focus {
+				background-color : rgba(0,0,0, 0.1);
+				text-shadow : 4px 0px 0 #444444;
+			}
+			footer {
+				width : 1000px;
+				margin : 0px auto;				
+				margin-top : 20px;
+				text-align : center;
+				color : white;
+				background-color : rgba(0,0,0, 0.4);
+				padding : 10px 50px;
+				transition: 0.25s ease-in-out;
+			}
+			footer:hover {
+				background-color : rgba(0,0,0, 0.7);
+			}
+			#me {
+				color : white;
+				text-decoration : none;
+			}
+			#me:hover, #me:focus {
+				text-decoration : underline;
+			}
+			#out {
+				position:absolute;
+				right: 15px;
+			}
+			#out a {
+				color : white;
+				text-decoration : none;
+				font-size : 1.2em;
+				background-color: rgba(0,0,0, 0.2);
+				padding: 5px;
+				transition: 0.25s ease-in-out;
+			}
+			#out a:hover {
+				color : #313131;
+				text-decoration : none;
+				background-color: rgba(255,255,255, 0.5);
+			}
